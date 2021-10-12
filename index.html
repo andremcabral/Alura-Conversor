@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="style.css">
+<div class="container">
+    <h1 class="page-title">
+        Conversor de moedas
+    </h1>
+    <p class="page-subtitle">
+        Converta seus valores em dólar ou real !!
+    </p>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+    <label for="moeda">Insira o valor</label><br>
+    <select name="select" id="selecionaOrigem">
+      <option value="reais" selected>De REAIS</option>
+      <option value="dolares">De DÓLARES</option>
+      <option value="euros">De EUROS</option>
+    </select>
+    <input type="number" id="valor" size="2" /><br>
+    <select name="select" id="selecionaDestino">
+      <option value="reais">Para REAIS</option>
+      <option value="dolares" selected>Para DÓLARES</option>
+      <option value="euros">Para EUROS</option>
+    </select>
+    <button type="submit" onclick="Converter()">Converter</button>
+    <h2 id="valorConvertido"></h2>
+</div>
+<a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    <script src="app.js"></script>
